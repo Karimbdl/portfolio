@@ -8,6 +8,7 @@
     <title>Mon site web !</title>
     <link rel="stylesheet" href="/css/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 
 <body>
@@ -20,7 +21,9 @@
             <a href="#about">About</a>
             <a href="#services">Skills</a>
             <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
+            <a href="mailto:Abdelkarim.boudali@outlook.com">Contactez-moi</a>
+
+
         </nav>
     </header>
 
@@ -28,14 +31,16 @@
         <div class="home-content">
             <h3>Salut, c'est </h3>
             <h1>Abdelkarim Boudali</h1>
-            <h3>je suis <span>étudiant</span></h3>
+            <h3>je suis <span>Etudiant</span></h3>
             <div class="social-media">
-                <a href="#"><i class='bx bxl-instagram'></i></a>
-                <a href="#"><i class='bx bxl-linkedin'></i></a>
-                <a href="#"><i class='bx bxl-github'></i></a>
+                <a href="https://www.instagram.com/urbanacogitandi/" target="_blank"><i
+                        class='bx bxl-instagram'></i></a>
+                <a href="https://www.linkedin.com/in/abdelkarim-boudali-732871268/" target="_blank"><i
+                        class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/Karimbdl" target="_blank"><i class='bx bxl-github'></i></a>
             </div>
-            <a href="#" class="btn">Download CV</a>
-            </a>
+            <a href="/pdf/AbdelkarimBoudaliCV.pdf" target="_blank" download="CV.pdf" class="btn">Download CV</a>
+
         </div>
         <div class="home-img">
             <img src="/images/photo.png" alt="">
@@ -53,7 +58,11 @@
             <h3>Etudiant à l'EPSI Montpellier</h3>
             <p>Passioné d'informatique en général, mais plus précisément en Cybersucrité, Réseaux et le developpement
             </p>
-            <a href="#" class="btn">Read More</a>
+
+            <button class="btn" onclick="showMore()">Read More</button>
+            <p id="moreText" style="display:none;">Si vous voulez en savoir plus alors contactez moi !</p>
+        </div>
+
         </div>
     </section>
 
@@ -64,17 +73,22 @@
                 <i class='bx bx-code-alt'></i>
                 <h3>Developpement</h3>
                 <p>Je maitrise HTML CSS PHP SQL ainsi que du javascript du React aussi mais pas que du developpement
-                    web, du developpement en général comme du Python </p>
-                <a href="#" class="btn">Read More</a>
+                    web, du developpement en général comme du Python, plusieurs librairies de python </p>
+                <button class="btn" onclick="getMore()">Read More</button>
+                <p id="plus" style="display:none">Les librairies que je maitrise sont pygame, numpy, BeautifulSoup,
+                    Regex, Requets, Pandas</p>
             </div>
-
 
             <div class="services-box">
                 <i class='bx bx-sitemap'></i>
                 <h3>Réseaux</h3>
-                <p>Je maitrise HTML CSS PHP SQL ainsi que du javascript du React aussi mais pas que du developpement
-                    web, du developpement en général comme du Python </p>
-                <a href="#" class="btn">Read More</a>
+                <p>Maitrise de Linux et de windows , mise en place de serveur web apache et nginx , cisco packet tracer,
+                    connaissance de Wireshark ainsi que nagios, création de machine virtuelles vmware et configuration
+                    des windows server</p>
+                <button class="btn" onclick="lirePlus()">Read More</button>
+                <p id="lire" style="display: none;">tout sera plus clair dans le CV mais si vous insistez alors je
+                    maitrise aussi
+                    le hardware, je sais configurer des routeurs et des firewall ainsi que des switchers </p>
             </div>
 
 
@@ -84,6 +98,7 @@
                 <p>Je maitrise HTML CSS PHP SQL ainsi que du javascript du React aussi mais pas que du developpement
                     web, du developpement en général comme du Python </p>
                 <a href="#" class="btn">Read More</a>
+
             </div>
 
 
@@ -135,14 +150,15 @@
                     <p>Developpement d'un site pour un hotel Carnot pour les reservations des clients avec une partie
                         admin en utilisant html css ainsi que php</p>
                     <a href="#"><i class='bx bx-link-external'></i></a>
+
                 </div>
             </div>
         </div>
     </section>
 
-    <section>
 
-    </section>
+
+
 
 
 
